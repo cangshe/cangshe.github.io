@@ -2,7 +2,7 @@
 title: 唐诗研究（一）
 date: 2020-02-25 09:59:31
 tags: 唐诗研究
-cover: http://cdn.nenu.site/tang.png
+cover: http://cdn.nenu.site/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200225100022.png
 ---
 
 > 王小岩
