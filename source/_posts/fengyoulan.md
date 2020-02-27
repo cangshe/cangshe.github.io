@@ -1,11 +1,11 @@
 ---
 title: 评《中国哲学简史》
 date: 2019-12-21 00:16:56
-tags: 
-    - 冯友兰
-	- 哲学史
 categories:
     - 文章
+tags:
+    - 冯友兰
+    - 哲学史
 cover: http://cdn.nenu.site/gouma.jpg
 ---
 

@@ -2,12 +2,11 @@
 title: 美学原理（一）
 date: 2020-02-26 10:25:53
 tags:
-	-美学
-categories：
-	-美学
+    -美学
+categories:
+    -美学原理
 cover: http://cdn.nenu.site/meixue.png
 ---
-
 # 第一节 美学的历史
 
 一、美学思维及其古代形态

@@ -1,7 +1,7 @@
 ---
 title: 难受呀
 date: 2018-07-10 23:01:23
-tags: tags: 
+tags:
     - 难受呀
 categories:
     - 文章
