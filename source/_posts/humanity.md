@@ -1,7 +1,10 @@
 ---
 title: 人性
 date: 2018-06-14 16:29:20
-tags: 人性
+tags: 
+    - 人性
+categories:
+    - 文章
 cover: http://cdn.nenu.site/063.jpg
 ---
 

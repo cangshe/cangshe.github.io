@@ -1,7 +1,10 @@
 ---
 title: 哲学问题
 date: 2018-07-09 10:12:42
-tags: 哲学
+tags: 
+    - 哲学
+categories:
+    - 哲学史
 cover: http://cdn.nenu.site/TIM%E6%88%AA%E5%9B%BE20180617194045.png
 ---
 

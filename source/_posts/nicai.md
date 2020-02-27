@@ -1,7 +1,11 @@
 ---
 title: 关于尼采“上帝死了”的思考
 date: 2019-03-20 23:53:05
-tags: 尼采
+tags: 
+    - 尼采
+	- 哲学史
+categories:
+    - 文章
 cover: http://cdn.nenu.site/nicai.jpg
 ---
 

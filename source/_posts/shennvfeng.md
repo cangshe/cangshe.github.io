@@ -1,7 +1,10 @@
 ---
 title: 舒婷《神女峰》赏析
 date: 2019-09-29 12:10:28
-tags: 舒婷
+tags: 
+    - 舒婷
+categories:
+    - 文章
 cover: http://cdn.nenu.site/211.jpg
 ---
 

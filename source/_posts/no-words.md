@@ -1,7 +1,10 @@
 ---
 title: 我不会写字了
 date: 2018-06-12 17:17:07
-tags: 文字
+tags: 
+    - 文字
+categories:
+    - 文章
 cover: http://cdn.nenu.site/thumb%20%283%29.jpg
 ---
 

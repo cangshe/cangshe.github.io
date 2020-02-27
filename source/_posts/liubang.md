@@ -1,7 +1,10 @@
 ---
 title: 《史记》中刘邦形象探析
 date: 2019-05-21 00:02:50
-tags: 刘邦
+tags: 
+    - 刘邦
+categories:
+    - 文章
 cover: http://cdn.nenu.site/nvhai.jpg
 ---
 

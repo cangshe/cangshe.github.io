@@ -1,7 +1,10 @@
 ---
 title: 当代文学史（一）
 date: 2018-07-05 22:11:20
-tags: 当代文学史
+tags: 
+    - 文学史
+categories:
+    - 文学史
 cover: http://cdn.nenu.site/%E5%90%8D%E5%A5%B3.jpg
 ---
 

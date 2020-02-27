@@ -1,7 +1,10 @@
 ---
 title: 党课结业报告
 date: 2019-11-01 00:14:11
-tags: 党课
+tags: 
+    - 党课
+categories:
+    - 文章
 cover: http://cdn.nenu.site/damh.jpg
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: 汪曾祺——诗化散文
 date: 2018-06-13 12:19:57
-tags: 汪曾祺
+tags: 
+    - 汪曾祺
+categories:
+    - 文章
 cover: http://cdn.nenu.site/letter.jpg
 ---
 

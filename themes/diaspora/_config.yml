@@ -3,7 +3,9 @@ menu:
   友情链接: /friends
   Whoami: /whoami
   Github: https://github.com/cangshe
-  # Twitter: https://twitter.com/FechinLi
+  分类: /categories
+  归档: /archives
+  标签云: /tags
 
 # 是否显示目录
 TOC: false

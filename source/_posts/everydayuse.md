@@ -1,7 +1,11 @@
 ---
 title: 20C美国小说研究（二）（EVERYDAY USE, 1973）问题探讨
 date: 2020-02-23 10:51:54
-tags: 美国小说
+tags: 
+    - 美国小说
+	- 日常用品
+categories:
+    - 美国小说
 cover: http://cdn.nenu.site/v2-638cc95dccafffc90982239c476256b6_r.jpg
 ---
 

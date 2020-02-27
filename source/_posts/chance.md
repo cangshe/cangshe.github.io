@@ -1,7 +1,10 @@
 ---
 title: 获得与代价
 date: 2018-06-25 20:12:43
-tags: 代价
+tags: 
+    - 代价
+categories:
+    - 文章
 cover: http://cdn.nenu.site/ijqi.jpg
 ---
 

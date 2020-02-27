@@ -1,7 +1,10 @@
 ---
 title: 这可能是你危急情况下最全（有效）的自救方法
 date: 2018-08-29 05:27:53
-tags: 自救
+tags: 
+    - 自救
+categories:
+    - 文章
 cover: http://cdn.nenu.site/ponyo.JPG
 ---
 

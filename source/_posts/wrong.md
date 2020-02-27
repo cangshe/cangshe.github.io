@@ -1,7 +1,10 @@
 ---
-title: 魔
+title: 😔
 date: 2018-08-21 20:24:36
-tags: nothing
+tags: 
+    - nothing
+categories:
+    - 文章
 cover: http://cdn.nenu.site/ali.jpg
 ---
 

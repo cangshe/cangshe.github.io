@@ -1,7 +1,10 @@
 ---
 title: 试论《阿卡奈人》
 date: 2019-10-21 14:12:26
-tags: 阿卡奈人
+tags: 
+    - 阿卡奈人
+categories:
+    - 文章
 cover: http://cdn.nenu.site/akanai.jpg
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: The Browning Version
 date: 2018-06-21 23:57:57
-tags: 白朗宁版本
+tags: 
+    - 白朗宁版本
+categories:
+    - 文章
 cover: http://cdn.nenu.site/the-browning-version-main-review.jpg
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: 评李大钊《史学要论》
 date: 2019-06-29 00:07:16
-tags: 史学要论
+tags: 
+    - 史学要论
+categories:
+    - 文章
 cover: http://cdn.nenu.site/lidazhao.jpg
 ---
 

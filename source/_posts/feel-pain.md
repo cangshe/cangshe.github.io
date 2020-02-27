@@ -1,7 +1,10 @@
 ---
 title: 痛苦的几级尝试
 date: 2018-06-08 01:01:32
-tags: pain
+tags: 
+    - pain
+categories:
+    - 文章
 cover: http://cdn.nenu.site/thumb%20%281%29.jpg
 ---
 

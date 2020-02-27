@@ -1,7 +1,11 @@
 ---
 title: 青海（二）
 date: 2018-08-01 11:51:18
-tags: 青海
+tags: 
+    - 青海
+categories:
+    - 文章
+
 cover: http://cdn.nenu.site/2345.jpg
 ---
 

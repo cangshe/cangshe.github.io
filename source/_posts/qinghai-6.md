@@ -1,7 +1,11 @@
 ---
 title: 青海（六）
 date: 2018-08-05 12:37:35
-tags: 青海
+tags: 
+    - 青海
+categories:
+    - 文章
+
 cover: http://cdn.nenu.site/785.png
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: Hexo小记以及四年总结
 date: 2018-06-06 15:10:47
-tags: hexo,typecho
+tags: 
+    - typecho
+categories:
+    - 文章
 cover: http://cdn.nenu.site/1839.png
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: 分手
 date: 2018-07-18 15:05:42
-tags: 分手
+tags: 
+    - 分手
+categories:
+    - 文章
 cover: http://cdn.nenu.site/thumb%20%2811%29.jpg
 ---
 

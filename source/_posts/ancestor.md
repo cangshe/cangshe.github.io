@@ -1,7 +1,10 @@
 ---
 title: 寻根小说特点
 date: 2018-07-08 19:54:32
-tags: 现当代文学
+tags: 
+    - 寻根小说
+categories:
+    - 文学史
 mp3: http://cdn.nenu.site/9a97f15c-a4a6-4f5a-a2d0-a2dacf592f27.mp3
 cover: http://cdn.nenu.site/7d181c5f01c2935c7d994b31149f891b.jpg
 ---

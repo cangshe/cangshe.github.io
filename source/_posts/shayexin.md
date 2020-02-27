@@ -1,7 +1,10 @@
 ---
 title: 沙叶新戏剧的艺术特色
 date: 2018-07-14 13:05:14
-tags: 沙叶新
+tags: 
+    - 沙叶新
+categories:
+    - 文学史
 cover: http://cdn.nenu.site/thumb%20%286%29.jpg
 ---
 

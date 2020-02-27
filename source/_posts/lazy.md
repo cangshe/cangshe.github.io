@@ -1,7 +1,10 @@
 ---
 title: 偷懒的技术
 date: 2018-06-20 06:49:04
-tags: 偷懒
+tags: 
+    - 偷懒
+categories:
+    - 文章
 cover: http://cdn.nenu.site/excel-2016.png
 ---
 

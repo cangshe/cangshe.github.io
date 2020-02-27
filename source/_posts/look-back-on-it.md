@@ -1,7 +1,10 @@
 ---
 title: 在停尸房中鞭尸
 date: 2018-06-15 23:20:22
-tags: 鞭尸
+tags: 
+    - 读书
+categories:
+    - 文章
 cover: http://cdn.nenu.site/timg.jpg
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: 哲学中几个问题的思考
 date: 2018-06-11 16:48:05
-tags: 哲学
+tags: 
+    - 哲学
+categories:
+    - 哲学史
 cover: http://cdn.nenu.site/phi.jpg
 ---
 

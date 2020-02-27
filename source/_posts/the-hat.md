@@ -1,7 +1,10 @@
 ---
 title: 他知道你帽子里藏了什么
 date: 2018-06-17 00:28:38
-tags: 帽子
+tags: 
+    - 帽子
+categories:
+    - 文章
 cover: http://cdn.nenu.site/father-and-son-2258681_1920.jpg
 ---
 

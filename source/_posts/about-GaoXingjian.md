@@ -1,7 +1,10 @@
 ---
 title: 一个人的圣经
 date: 2018-06-10 21:44:26
-tags: 高行健
+tags: 
+    - 高行健
+categories:
+    - 文章
 cover: http://cdn.nenu.site/s.jpg
 ---
 

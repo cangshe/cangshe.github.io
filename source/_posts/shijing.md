@@ -1,7 +1,10 @@
 ---
 title: 诗经的社会功用-以左传为中心
 date: 2019-05-20 23:59:47
-tags: 诗经
+tags: 
+    - 诗经
+categories:
+    - 文章
 cover: http://cdn.nenu.site/aka.png
 ---
 

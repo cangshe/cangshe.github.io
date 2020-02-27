@@ -1,7 +1,10 @@
 ---
 title: 杨朔散文艺术特色
 date: 2018-07-11 23:25:49
-tags: 杨朔
+tags: 
+    - 杨朔
+categories:
+    - 文学史
 cover: http://cdn.nenu.site/194507klzvzlfd2zgwnv25.jpg
 ---
 

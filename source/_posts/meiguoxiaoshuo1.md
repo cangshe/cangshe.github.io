@@ -1,7 +1,10 @@
 ---
 title: 20C美国小说研究（一）如何读小说
 date: 2020-02-22 11:46:52
-tags: 美国小说
+tags: 
+    - 美国小说
+categories:
+    - 美国小说
 cover: http://cdn.nenu.site/unnamed.jpg
 ---
 

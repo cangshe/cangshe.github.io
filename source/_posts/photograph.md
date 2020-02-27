@@ -1,7 +1,10 @@
 ---
 title: 摄影构图（一）
 date: 2018-07-04 22:34:09
-tags: 摄影构图
+tags: 
+    - 摄影
+categories:
+    - 摄影
 cover: http://cdn.nenu.site/thumb%20%285%29.jpg
 ---
 

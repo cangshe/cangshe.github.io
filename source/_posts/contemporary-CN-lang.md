@@ -1,7 +1,10 @@
 ---
 title: 现代汉语问题简答
 date: 2018-06-09 21:40:00
-tags: 现代汉语
+tags: 
+    - 现代汉语
+categories:
+    - 现代汉语
 cover: http://cdn.nenu.site/500742936_banner.jpg
 ---
 

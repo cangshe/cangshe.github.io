@@ -1,7 +1,10 @@
 ---
 title: 《随想录》的思想价值、艺术成就
 date: 2018-07-16 15:22:53
-tags: 随想录
+tags: 
+    - 随想录
+categories:
+    - 文学史
 cover: http://cdn.nenu.site/thumb%20%2810%29.jpg
 ---
 

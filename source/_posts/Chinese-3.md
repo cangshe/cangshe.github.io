@@ -1,7 +1,10 @@
 ---
 title: 现代汉语杂题（三）
 date: 2018-07-03 08:28:49
-tags: 现代汉语
+tags: 
+    - 现代汉语
+categories:
+    - 现代汉语
 cover: http://cdn.nenu.site/bg8.jpg
 ---
 

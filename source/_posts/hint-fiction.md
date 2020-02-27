@@ -1,7 +1,10 @@
 ---
 title: 微小说四则
 date: 2018-10-17 16:40:20
-tags: 微小说
+tags: 
+    - 微小说
+categories:
+    - 文章
 cover: http://cdn.nenu.site/hint.jpg
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: 零碎的ps笔记
 date: 2018-07-19 14:23:31
-tags: ps
+tags: 
+    - ps
+categories:
+    - 文章
 cover: http://cdn.nenu.site/holiday-2880261_1920.jpg
 ---
 

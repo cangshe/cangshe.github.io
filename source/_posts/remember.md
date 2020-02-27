@@ -1,7 +1,10 @@
 ---
-title: 我在夜晚八点钟走在无人被杀的黑色街道上被垃圾桶撞翻了胃
+title: 难受呀
 date: 2018-07-10 23:01:23
-tags: nothing-to-type
+tags: tags: 
+    - 难受呀
+categories:
+    - 文章
 cover: http://cdn.nenu.site/thumb%20%286%29.jpg
 ---
 

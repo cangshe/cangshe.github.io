@@ -1,7 +1,10 @@
 ---
 title: 关于adb删除手机中内置软件的方法（无root）
 date: 2018-09-01 11:42:36
-tags: adb
+tags: 
+    - adb
+categories:
+    - 文章
 cover: http://cdn.nenu.site/qfl.jpg
 ---
 

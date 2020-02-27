@@ -1,7 +1,11 @@
 ---
 title: 青海（三）
 date: 2018-08-02 11:57:25
-tags: 青海
+tags: 
+    - 青海
+categories:
+    - 文章
+
 cover: http://cdn.nenu.site/xin.png
 ---
 

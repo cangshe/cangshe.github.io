@@ -1,7 +1,10 @@
 ---
 title: 现代汉语语法简答
 date: 2018-06-30 21:44:13
-tags: 语法
+tags: 
+    - 语法
+categories:
+    - 现代汉语
 cover: http://cdn.nenu.site/c9c711fcf286457b7870569bacdf2ad6.jpg
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: 数字华容道通解
 date: 2018-10-18 16:47:45
-tags: 华容道
+tags: 
+    - 华容道
+categories:
+    - 文章
 cover: http://cdn.nenu.site/TIM%E5%9B%BE%E7%89%8720181018171624.png
 ---
 

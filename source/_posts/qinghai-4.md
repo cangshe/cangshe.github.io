@@ -1,7 +1,11 @@
 ---
 title: 青海（四）
 date: 2018-08-03 12:01:20
-tags: 青海
+tags: 
+    - 青海
+categories:
+    - 文章
+
 cover: http://cdn.nenu.site/yagn.jpg
 ---
 

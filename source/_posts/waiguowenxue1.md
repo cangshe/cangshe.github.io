@@ -1,7 +1,10 @@
 ---
 title: 外国文学（一）十九世纪现实主义概述
 date: 2020-02-25 13:25:43
-tags: 外国文学
+tags: 
+    - 外国文学
+categories:
+    - 外国文学
 cover: http://cdn.nenu.site/XIANSHI.png
 ---
 

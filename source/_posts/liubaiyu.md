@@ -1,7 +1,10 @@
 ---
 title: 刘白羽散文的艺术特色
 date: 2018-07-06 23:23:43
-tags: 刘白羽
+tags: 
+    - 刘白羽
+categories:
+    - 文学史
 cover: http://cdn.nenu.site/TIM%E5%9B%BE%E7%89%8720180708232828.jpg
 ---
 

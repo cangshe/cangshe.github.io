@@ -1,7 +1,10 @@
 ---
 title: 现代汉语杂题（二）
 date: 2018-07-01 10:20:02
-tags: 现代汉语
+tags: 
+    - 现代汉语
+categories:
+    - 现代汉语
 cover: http://cdn.nenu.site/bg2.jpg
 ---
 

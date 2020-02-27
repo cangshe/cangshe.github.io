@@ -1,7 +1,10 @@
 ---
 title: python中字符串和列表区别
 date: 2018-08-31 22:20:16
-tags: python
+tags: 
+    - python
+categories:
+    - python
 ---
 
 python中字符串和列表都是序列，但列表是可变的，其中的各项值可以用赋值语句修改。但字符串不可变。具体如下：

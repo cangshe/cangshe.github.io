@@ -1,7 +1,10 @@
 ---
 title: 现代文学文献学期末体会
 date: 2019-01-01 23:48:26
-tags: 现代文学文献学
+tags: 
+    - 现代文学文献学
+categories:
+    - 文章
 cover: http://cdn.nenu.site/suh.jpg
 ---
 

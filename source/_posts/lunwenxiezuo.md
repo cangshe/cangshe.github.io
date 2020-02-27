@@ -1,7 +1,10 @@
 ---
 title: 研究方法与论文写作心得体会
 date: 2019-06-21 00:05:46
-tags: 论文写作
+tags: 
+    - 论文写作
+categories:
+    - 文章
 cover: http://cdn.nenu.site/libai.jpg
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: 徐驰报告文学的艺术特色
 date: 2018-07-15 11:31:47
-tags: 徐驰
+tags: 
+    - 徐驰
+categories:
+    - 文学史
 cover: http://cdn.nenu.site/thumb%20%288%29.jpg
 ---
 

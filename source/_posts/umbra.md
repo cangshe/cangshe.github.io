@@ -1,7 +1,10 @@
 ---
 title: 伞
 date: 2018-06-19 16:46:56
-tags: 伞
+tags: 
+    - 伞
+categories:
+    - 文章
 cover: http://cdn.nenu.site/umb.jpg
 ---
 

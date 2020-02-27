@@ -1,7 +1,10 @@
 ---
 title: 尝试处理两个物件
 date: 2018-06-22 20:43:11
-tags: 修理
+tags: 
+    - 修理
+categories:
+    - 文章
 cover: http://cdn.nenu.site/TIM%E6%88%AA%E5%9B%BE20180623212411.png
 ---
 

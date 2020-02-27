@@ -1,7 +1,10 @@
 ---
 title: 艾青新时期诗歌的艺术特色
 date: 2018-07-12 11:54:51
-tags: 艾青
+tags: 
+    - 艾青
+categories:
+    - 文学史
 cover: http://cdn.nenu.site/20160928082037_32088.jpg
 ---
 

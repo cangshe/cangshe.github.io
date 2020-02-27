@@ -1,7 +1,10 @@
 ---
 title: 青海（终）
 date: 2018-08-07 19:00:27
-tags: 青海
+tags: 
+    - 青海
+categories:
+    - 文章
 cover: http://cdn.nenu.site/fox.jpg
 ---
 

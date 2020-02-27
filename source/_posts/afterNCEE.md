@@ -1,7 +1,10 @@
 ---
 title: 探索除高考之外的廉价舒适感
 date: 2018-06-07 18:02:58
-tags: 高考
+tags: 
+    - 高考
+categories:
+    - 文章
 mp3: http://cdn.nenu.site/qicheng.mp3
 ---
 

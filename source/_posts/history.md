@@ -1,7 +1,10 @@
 ---
 title: 近现代史纲要
 date: 2018-07-02 11:28:24
-tags: 近现代史纲要
+tags: 
+    - 近现代史纲要
+categories:
+    - 近现代史纲要
 cover: http://cdn.nenu.site/bg3.jpg
 ---
 

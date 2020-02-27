@@ -1,7 +1,10 @@
 ---
 title: 我国空气污染现状及其防治对策研究
 date: 2018-06-24 21:43:25
-tags: 空气污染
+tags: 
+    - 空气污染
+categories:
+    - 文章
 cover: http://cdn.nenu.site/thumb_Fri_Jul_14_2017.jpg
 ---
 

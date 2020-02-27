@@ -1,7 +1,10 @@
 ---
 title: 缄默
 date: 2018-06-28 21:51:13
-tags: 缄默
+tags: 
+    - 缄默
+categories:
+    - 文章
 cover: http://cdn.nenu.site/thumb_Wed_Jan_11_2017.jpg
 ---
 

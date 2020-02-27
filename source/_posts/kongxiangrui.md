@@ -1,7 +1,10 @@
 ---
 title: 记一次代写稿件
 date: 2019-04-20 13:55:15
-tags: 代写
+tags: 
+    - 代写
+categories:
+    - 文章
 cover: http://cdn.nenu.site/chuang.jpg
 ---
 

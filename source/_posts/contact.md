@@ -1,7 +1,10 @@
 ---
 title: 《星际穿越》与《超时空接触》(Contact) 观后感
 date: 2018-06-27 22:44:54
-tags: 超时空接触
+tags: 
+    - 超时空接触
+categories:
+    - 文章
 cover: http://cdn.nenu.site/10043-6.jpg
 ---
 

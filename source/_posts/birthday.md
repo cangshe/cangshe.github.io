@@ -1,7 +1,10 @@
 ---
 title: 生日
 date: 2018-07-13 00:05:24
-tags: 生日
+tags: 
+    - 生日
+categories:
+    - 文章
 cover: http://cdn.nenu.site/138-141009214137.jpg
 ---
 

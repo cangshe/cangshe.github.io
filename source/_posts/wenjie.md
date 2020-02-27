@@ -1,7 +1,10 @@
 ---
 title: 闻捷的诗歌
 date: 2018-07-15 19:31:04
-tags: 闻捷
+tags: 
+    - 闻捷
+categories:
+    - 文学史
 cover: http://cdn.nenu.site/thumb%20%289%29.jpg
 ---
 

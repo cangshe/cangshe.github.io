@@ -1,7 +1,10 @@
 ---
 title: 大学生该有的兴观群怨
 date: 2018-06-16 09:32:25
-tags: 大学
+tags: 
+    - 文章
+categories:
+    - 文学史
 cover: http://cdn.nenu.site/main.jpg
 ---
 

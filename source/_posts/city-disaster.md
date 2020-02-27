@@ -1,7 +1,10 @@
 ---
 title: 城市灾害与安全管理
 date: 2018-06-29 21:57:41
-tags: 城市灾害
+tags: 
+    - 城市灾害
+categories:
+    - 文章
 cover: http://cdn.nenu.site/TIM%E6%88%AA%E5%9B%BE20180623222309.png
 ---
 

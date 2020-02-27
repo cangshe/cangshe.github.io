@@ -1,7 +1,10 @@
 ---
 title: 长春城市化发展过程
 date: 2018-06-23 22:12:41
-tags: 城市化
+tags: 
+    - 城市化
+categories:
+    - 文章
 cover: http://cdn.nenu.site/TIM%E6%88%AA%E5%9B%BE20180623222309.png
 ---
 

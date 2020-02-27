@@ -1,7 +1,11 @@
 ---
 title: 青海（一）
 date: 2018-07-31 11:18:03
-tags: 青海
+tags: 
+    - 青海
+categories:
+    - 文章
+
 cover: http://cdn.nenu.site/qwe.jpg
 ---
 

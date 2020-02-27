@@ -1,7 +1,10 @@
 ---
 title: 旅行
 date: 2018-06-18 21:57:18
-tags: 旅行
+tags: 
+    - 旅行
+categories:
+    - 文章
 cover: http://cdn.nenu.site/thumb%20%284%29.jpg
 ---
 
