@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>关于adb删除手机中内置软件的方法（无root） - 天黑LA</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="tianhei,"> 
+    <meta name="description" content="前些天到货了一个老年机，乐丰v5，安卓6.0系统，因为造型和系统的组合太过奇特，准备买来收藏。cpu估计是mt67xx系列，屏幕分辨率极低，所以打王者还是不成问题的。因为内置桌面操作逻辑感人，附加3,"> 
+    <meta name="author" content="TIAN HEI"> 
+    <link rel="alternative" href="atom.xml" title="天黑LA" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">天黑LA</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://tianhei.asia"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">关于adb删除手机中内置软件的方法（无root）</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">关于adb删除手机中内置软件的方法（无root）</h1>
+        <div class="stuff">
+            <span>九月 01, 2018</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/adb/" rel="tag">adb</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>前些天到货了一个老年机，乐丰v5，安卓6.0系统，因为造型和系统的组合太过奇特，准备买来收藏。cpu估计是mt67xx系列，屏幕分辨率极低，所以打王者还是不成问题的。因为内置桌面操作逻辑感人，附加360全套绑架软件，我心心念念的想要搞定他们，起初是想通过root后直接删除，应该是机型太冷门，所有方法全部失败。于是想起了万能的adb。</p>
+<p>它长这样（清除毒瘤之后）：</p>
+<p><img src="http://cdn.nenu.site/IMG_0059.JPG" alt=""></p>
+<h2 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h2><p>1.连接成功后输入<code>adb shell</code>调用安卓指令</p>
+<p>2.用<code>pm list packages | grep &quot;&quot;</code> 列出所有包名，我的如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line">package:com.android.fmradio</span><br><span class="line">package:com.android.providers.telephony</span><br><span class="line">package:com.qiku.logsystem</span><br><span class="line">package:com.mediatek.camera</span><br><span class="line">package:com.android.providers.calendar</span><br><span class="line">package:com.android.providers.media</span><br><span class="line">package:com.tencent.tmgp.sgame</span><br><span class="line">package:com.mediatek.fwk.plugin</span><br><span class="line">package:com.mobiletools.systemhelper</span><br><span class="line">package:com.android.wallpapercropper</span><br><span class="line">package:com.mediatek.schpwronoff</span><br><span class="line">package:com.iflytek.inputmethod.hardk</span><br><span class="line">package:com.android.documentsui</span><br><span class="line">package:com.android.externalstorage</span><br><span class="line">package:com.mediatek.ygps</span><br><span class="line">package:com.android.htmlviewer</span><br><span class="line">package:com.iflytek.speechcloud</span><br><span class="line">package:com.android.quicksearchbox</span><br><span class="line">package:com.android.mms.service</span><br><span class="line">package:com.dx.agent2</span><br><span class="line">package:com.android.providers.downloads</span><br><span class="line">package:com.mediatek.engineermode</span><br><span class="line">package:com.qihoo.browser</span><br><span class="line">package:com.shyz.toutiao</span><br><span class="line">package:com.mediatek.omacp</span><br><span class="line">package:com.android.providers.applications</span><br><span class="line">package:com.android.soundrecorder</span><br><span class="line">package:com.android.defcontainer</span><br><span class="line">package:com.android.providers.downloads.ui</span><br><span class="line">package:com.android.pacprocessor</span><br><span class="line">package:com.tencent.mm</span><br><span class="line">package:cn.etouch.ecalendar.cpa</span><br><span class="line">package:com.android.certinstaller</span><br><span class="line">package:com.android.carrierconfig</span><br><span class="line">package:android</span><br><span class="line">package:com.qiku.advertisement</span><br><span class="line">package:com.android.mms</span><br><span class="line">package:com.android.stk</span><br><span class="line">package:com.android.backupconfirm</span><br><span class="line">package:com.qiku.android.register</span><br><span class="line">package:com.mediatek.security</span><br><span class="line">package:com.android.statementservice</span><br><span class="line">package:com.mediatek.providers.drm</span><br><span class="line">package:com.android.providers.settings</span><br><span class="line">package:com.mediatek.miravision.ui</span><br><span class="line">package:com.android.sharedstoragebackup</span><br><span class="line">package:com.mediatek.batterywarning</span><br><span class="line">package:com.android.printspooler</span><br><span class="line">package:com.mediatek.datatransfer</span><br><span class="line">package:com.android.dreams.basic</span><br><span class="line">package:com.qihoo360.mobilesafe</span><br><span class="line">package:com.android.webview</span><br><span class="line">package:com.android.inputdevices</span><br><span class="line">package:com.mediatek</span><br><span class="line">package:com.qiku.android.launcher2</span><br><span class="line">package:com.example</span><br><span class="line">package:com.android.musicfx</span><br><span class="line">package:com.lephone.nurse</span><br><span class="line">package:com.android.onetimeinitializer</span><br><span class="line">package:com.qiku.android.cloudsync</span><br><span class="line">package:com.mediatek.nlpservice</span><br><span class="line">package:com.android.server.telecom</span><br><span class="line">package:com.android.keychain</span><br><span class="line">package:com.android.dialer</span><br><span class="line">package:com.android.gallery3d</span><br><span class="line">package:com.android.calllogbackup</span><br><span class="line">package:com.android.packageinstaller</span><br><span class="line">package:com.android.cleanprocesstool</span><br><span class="line">package:com.android.remotecore</span><br><span class="line">package:com.svox.pico</span><br><span class="line">package:com.android.proxyhandler</span><br><span class="line">package:com.qiku.configcenter</span><br><span class="line">package:com.vanzo.sos</span><br><span class="line">package:com.android.managedprovisioning</span><br><span class="line">package:com.mediatek.calendarimporter</span><br><span class="line">package:com.mediatek.atci.service</span><br><span class="line">package:com.android.dreams.phototable</span><br><span class="line">package:com.android.remotecare.qiku</span><br><span class="line">package:com.mediatek.thermalmanager</span><br><span class="line">package:com.baidu.BaiduMap</span><br><span class="line">package:com.tianqiwhite</span><br><span class="line">package:com.qiku.android.setupwizard</span><br><span class="line">package:com.mediatek.factorymode</span><br><span class="line">package:com.android.wallpaper.livepicker</span><br><span class="line">package:com.qihoo.appstore</span><br><span class="line">package:com.baidu.map.location</span><br><span class="line">package:com.android.settings</span><br><span class="line">package:com.qiku.speech</span><br><span class="line">package:com.android.calculator2</span><br><span class="line">package:com.mediatek.lbs.em2.ui</span><br><span class="line">package:com.unicom.zworeader.ui</span><br><span class="line">package:com.qiku.android.configcenter</span><br><span class="line">package:com.android.wallpaper</span><br><span class="line">package:com.android.vpndialogs</span><br><span class="line">package:com.android.email</span><br><span class="line">package:com.android.phone</span><br><span class="line">package:com.android.shell</span><br><span class="line">package:com.qiku.android.xtime</span><br><span class="line">package:com.android.providers.userdictionary</span><br><span class="line">package:com.qiku.android.ota</span><br><span class="line">package:com.qiku.android.filebrowser</span><br><span class="line">package:com.android.location.fused</span><br><span class="line">package:com.android.systemui</span><br><span class="line">package:com.android.exchange</span><br><span class="line">package:com.android.bluetoothmidiservice</span><br><span class="line">package:com.mediatek.mtklogger</span><br><span class="line">package:com.android.bluetooth</span><br><span class="line">package:com.android.providers.contacts</span><br><span class="line">package:com.android.captiveportallogin</span><br><span class="line">package:com.vz.commoninfo</span><br></pre></td></tr></table></figure>
+
+<p>3.像那种qihoo，qiku，calendar什么的明显是桌面，360和中华万年历，流氓软件，如果想删除的更细一些，可以下载<a href="https://www.coolapk.com/apk/com.xcn.baoming" target="_blank" rel="noopener">包名查看</a>对应删除，删除命令是<code>pm uninstall -k –- user 0 com.xxx.xxx</code></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='true'
+        data-ci='3c376289d3764cf1194f'
+        data-cs='4f646c7353a14ace54d1f434e8ccffd339d3a080'
+        data-r='mygitalk'
+        data-o='cangshe'
+        data-a='cangshe'
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
