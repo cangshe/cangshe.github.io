@@ -3,8 +3,7 @@ title: 21世纪20年代直播平台娱乐区标题大赏
 date: 2020-07-02 20:43:04
 tags:
     -直播
-cover:
-    -http://cdn.nenu.site/bg_%E6%97%85%E9%A4%A8%E9%83%A8%E5%B1%8B01%E6%98%BC.jpg
+cover: http://cdn.nenu.site/bg_%E6%97%85%E9%A4%A8%E9%83%A8%E5%B1%8B01%E6%98%BC.jpg
 ---
 
 别想啦！就是你老婆！
