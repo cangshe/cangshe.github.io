@@ -30,6 +30,52 @@
     <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
     </script>
+	<script>
+	//树叶飘落
+var NUMBER_OF_LEAVES = 8;
+function init(){
+    var container = document.getElementById('snow');
+    for (var i = 0; i < NUMBER_OF_LEAVES; i++) {
+        container.appendChild(createALeaf());
+    }
+}
+function randomInteger(low, high){
+    return low + Math.floor(Math.random() * (high - low));
+}
+function randomFloat(low, high){
+    return low + Math.random() * (high - low);
+}
+function pixelValue(value){
+    return value + 'px';
+}
+function durationValue(value){
+    return value + 's';
+}
+function createALeaf(){
+    var leafDiv = document.createElement('div');
+    leafDiv.style.top = "-50px";
+    leafDiv.style.left = pixelValue(randomInteger(0, 1920));
+    leafDiv.style.webkitAnimationName = 'fade, drop';
+    leafDiv.style.animationName = 'fade, drop';
+    var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+    leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    leafDiv.style.animationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    var leafDelay = durationValue(randomFloat(0, 5));
+    leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay;
+    leafDiv.style.animationDelay = leafDelay + ', ' + leafDelay;
+    var image = document.createElement('img');
+    image.src = 'https://game.gtimg.cn/images/dnf/cp/a20200813box/snow' + randomInteger(1, 4) + '.png';
+    var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip';
+    image.style.webkitAnimationName = spinAnimationName;
+    image.style.animationName = spinAnimationName;
+    var spinDuration = durationValue(randomFloat(4, 8));
+    image.style.webkitAnimationDuration = spinDuration;
+    image.style.animationDuration = spinDuration;
+    leafDiv.appendChild(image);
+    return leafDiv;
+}
+window.addEventListener('load', init, false);
+    </script>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="loading">
@@ -76,7 +122,7 @@
 <div id="screen">
     <div id="mark">
         <div class="layer" data-depth="0.4">
-            <img src="http://cdn.nenu.site/maerkesi.jfif" id="cover" crossorigin="anonymous" width="1920" height="1080">
+            <img src="http://cdn.nenu.site/1232123132132131321.png" id="cover" crossorigin="anonymous" width="1920" height="1080">
         </div>
     </div>
     <div id="vibrant">
@@ -93,29 +139,16 @@
     </div>
     
     <div id="post0">
-        <p>六月 16, 2020</p>
-        <h2><a href="/2020/bainiangudu/" title="《百年孤独》中的女性形象浅探" class="posttitle">《百年孤独》中的女性形象浅探</a></h2>
-        <p class="summary">《百年孤独》中的女性形象浅探
-摘要：《百年孤独》描写了布恩迪亚家族七代人的百年发展，引发了人们对拉美地区人情风俗的...</p>
+        <p>三月 03, 2020</p>
+        <h2><a href="/2020/waiguowenxue2/" title="外国文学（二）斯丹达尔和《红与黑》" class="posttitle">外国文学（二）斯丹达尔和《红与黑》</a></h2>
+        <p class="summary">1概述2斯丹达尔3巴尔扎克4狄更斯&amp;勃朗特姐妹档8S0.5|陀思妥耶夫斯基。
+司汤达？斯丹达尔？·斯丹达尔...</p>
     </div>
     
 </div>
 
     <div id="primary">
         
-<div class="post">
-    <a href="/2020/waiguowenxue2/" title="外国文学（二）斯丹达尔和《红与黑》">
-        <img src="http://cdn.nenu.site/1232123132132131321.png" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>三月 03, 2020</p>
-        <h3><a href="/2020/waiguowenxue2/" title="外国文学（二）斯丹达尔和《红与黑》" class="posttitle">外国文学（二）斯丹达尔和《红与黑》</a></h3>
-        <p>1概述2斯丹达尔3巴尔扎克4狄更斯&amp;勃朗特姐妹档8S0.5|陀思妥耶夫斯基。
-司汤达？斯丹达尔？·斯丹达尔（Stendhal，1783-1842）...</p>
-    </div>
-</div>
-
-
 <div class="post">
     <a href="/2020/waiguowenxue1/" title="外国文学（一）十九世纪现实主义概述">
         <img src="http://cdn.nenu.site/XIANSHI.png" class="cover" width="680" height="440">
@@ -125,6 +158,19 @@
         <h3><a href="/2020/waiguowenxue1/" title="外国文学（一）十九世纪现实主义概述" class="posttitle">外国文学（一）十九世纪现实主义概述</a></h3>
         <p>期末考试80 课程论文20 19-20世纪，中国以外的作家作品，文学思潮，写一个感兴趣的话题。
 当我们谈起“19世纪现实主义文学”时，我们在谈什么？19世...</p>
+    </div>
+</div>
+
+
+<div class="post">
+    <a href="/2018/bainiangudu/" title="《百年孤独》中的女性形象浅探">
+        <img src="http://cdn.nenu.site/maerkesi.jfif" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>六月 16, 2018</p>
+        <h3><a href="/2018/bainiangudu/" title="《百年孤独》中的女性形象浅探" class="posttitle">《百年孤独》中的女性形象浅探</a></h3>
+        <p>《百年孤独》中的女性形象浅探
+摘要：《百年孤独》描写了布恩迪亚家族七代人的百年发展，引发了人们对拉美地区人情风俗的关注，这片古老神秘的土地上充满着诡谲和驳...</p>
     </div>
 </div>
 

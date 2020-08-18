@@ -36,6 +36,52 @@
     <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
     </script>
+	<script>
+	//树叶飘落
+var NUMBER_OF_LEAVES = 8;
+function init(){
+    var container = document.getElementById('snow');
+    for (var i = 0; i < NUMBER_OF_LEAVES; i++) {
+        container.appendChild(createALeaf());
+    }
+}
+function randomInteger(low, high){
+    return low + Math.floor(Math.random() * (high - low));
+}
+function randomFloat(low, high){
+    return low + Math.random() * (high - low);
+}
+function pixelValue(value){
+    return value + 'px';
+}
+function durationValue(value){
+    return value + 's';
+}
+function createALeaf(){
+    var leafDiv = document.createElement('div');
+    leafDiv.style.top = "-50px";
+    leafDiv.style.left = pixelValue(randomInteger(0, 1920));
+    leafDiv.style.webkitAnimationName = 'fade, drop';
+    leafDiv.style.animationName = 'fade, drop';
+    var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+    leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    leafDiv.style.animationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    var leafDelay = durationValue(randomFloat(0, 5));
+    leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay;
+    leafDiv.style.animationDelay = leafDelay + ', ' + leafDelay;
+    var image = document.createElement('img');
+    image.src = 'https://game.gtimg.cn/images/dnf/cp/a20200813box/snow' + randomInteger(1, 4) + '.png';
+    var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip';
+    image.style.webkitAnimationName = spinAnimationName;
+    image.style.animationName = spinAnimationName;
+    var spinDuration = durationValue(randomFloat(4, 8));
+    image.style.webkitAnimationDuration = spinDuration;
+    image.style.animationDuration = spinDuration;
+    leafDiv.appendChild(image);
+    return leafDiv;
+}
+window.addEventListener('load', init, false);
+    </script>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="loading">

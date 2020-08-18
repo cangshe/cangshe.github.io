@@ -30,6 +30,52 @@
     <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
     </script>
+	<script>
+	//树叶飘落
+var NUMBER_OF_LEAVES = 8;
+function init(){
+    var container = document.getElementById('snow');
+    for (var i = 0; i < NUMBER_OF_LEAVES; i++) {
+        container.appendChild(createALeaf());
+    }
+}
+function randomInteger(low, high){
+    return low + Math.floor(Math.random() * (high - low));
+}
+function randomFloat(low, high){
+    return low + Math.random() * (high - low);
+}
+function pixelValue(value){
+    return value + 'px';
+}
+function durationValue(value){
+    return value + 's';
+}
+function createALeaf(){
+    var leafDiv = document.createElement('div');
+    leafDiv.style.top = "-50px";
+    leafDiv.style.left = pixelValue(randomInteger(0, 1920));
+    leafDiv.style.webkitAnimationName = 'fade, drop';
+    leafDiv.style.animationName = 'fade, drop';
+    var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+    leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    leafDiv.style.animationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    var leafDelay = durationValue(randomFloat(0, 5));
+    leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay;
+    leafDiv.style.animationDelay = leafDelay + ', ' + leafDelay;
+    var image = document.createElement('img');
+    image.src = 'https://game.gtimg.cn/images/dnf/cp/a20200813box/snow' + randomInteger(1, 4) + '.png';
+    var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip';
+    image.style.webkitAnimationName = spinAnimationName;
+    image.style.animationName = spinAnimationName;
+    var spinDuration = durationValue(randomFloat(4, 8));
+    image.style.webkitAnimationDuration = spinDuration;
+    image.style.animationDuration = spinDuration;
+    leafDiv.appendChild(image);
+    return leafDiv;
+}
+window.addEventListener('load', init, false);
+    </script>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="loading">
@@ -45,7 +91,7 @@
                 <div class="content">
                 
                     <div class="set">
-  <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E7%AB%A0/">文章</a><span class="category-list-count">55</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E5%AD%A6%E5%8F%B2/">文学史</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%8E%B0%E4%BB%A3%E6%B1%89%E8%AF%AD/">现代汉语</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%96%E5%9B%BD%E6%96%87%E5%AD%A6/">外国文学</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%94%90%E8%AF%97%E7%A0%94%E7%A9%B6/">唐诗研究</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%93%B2%E5%AD%A6%E5%8F%B2/">哲学史</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%AF%94%E8%BE%83%E6%96%87%E5%AD%A6/">比较文学</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BE%8E%E5%9B%BD%E5%B0%8F%E8%AF%B4/">美国小说</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%91%84%E5%BD%B1/">摄影</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94/">考研</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81/">近现代史纲要</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BE%8E%E5%9B%BD%E5%B0%8F%E8%AF%B4/">-美国小说</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BE%8E%E5%AD%A6%E5%8E%9F%E7%90%86/">美学原理</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BE%8E%E5%AD%A6%E5%8E%9F%E7%90%86/">-美学原理</a><span class="category-list-count">1</span></li></ul>
+  <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E7%AB%A0/">文章</a><span class="category-list-count">55</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E5%AD%A6%E5%8F%B2/">文学史</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%8E%B0%E4%BB%A3%E6%B1%89%E8%AF%AD/">现代汉语</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%96%E5%9B%BD%E6%96%87%E5%AD%A6/">外国文学</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%94%90%E8%AF%97%E7%A0%94%E7%A9%B6/">唐诗研究</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%93%B2%E5%AD%A6%E5%8F%B2/">哲学史</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%AF%94%E8%BE%83%E6%96%87%E5%AD%A6/">比较文学</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BE%8E%E5%9B%BD%E5%B0%8F%E8%AF%B4/">美国小说</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%91%84%E5%BD%B1/">摄影</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81/">近现代史纲要</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%80%83%E7%A0%94/">考研</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BE%8E%E5%AD%A6%E5%8E%9F%E7%90%86/">美学原理</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BE%8E%E5%9B%BD%E5%B0%8F%E8%AF%B4/">-美国小说</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BE%8E%E5%AD%A6%E5%8E%9F%E7%90%86/">-美学原理</a><span class="category-list-count">1</span></li></ul>
 </div>
 
                 

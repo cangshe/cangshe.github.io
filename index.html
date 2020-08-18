@@ -30,6 +30,52 @@
     <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
     </script>
+	<script>
+	//树叶飘落
+var NUMBER_OF_LEAVES = 8;
+function init(){
+    var container = document.getElementById('snow');
+    for (var i = 0; i < NUMBER_OF_LEAVES; i++) {
+        container.appendChild(createALeaf());
+    }
+}
+function randomInteger(low, high){
+    return low + Math.floor(Math.random() * (high - low));
+}
+function randomFloat(low, high){
+    return low + Math.random() * (high - low);
+}
+function pixelValue(value){
+    return value + 'px';
+}
+function durationValue(value){
+    return value + 's';
+}
+function createALeaf(){
+    var leafDiv = document.createElement('div');
+    leafDiv.style.top = "-50px";
+    leafDiv.style.left = pixelValue(randomInteger(0, 1920));
+    leafDiv.style.webkitAnimationName = 'fade, drop';
+    leafDiv.style.animationName = 'fade, drop';
+    var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+    leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    leafDiv.style.animationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    var leafDelay = durationValue(randomFloat(0, 5));
+    leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay;
+    leafDiv.style.animationDelay = leafDelay + ', ' + leafDelay;
+    var image = document.createElement('img');
+    image.src = 'https://game.gtimg.cn/images/dnf/cp/a20200813box/snow' + randomInteger(1, 4) + '.png';
+    var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip';
+    image.style.webkitAnimationName = spinAnimationName;
+    image.style.animationName = spinAnimationName;
+    var spinDuration = durationValue(randomFloat(4, 8));
+    image.style.webkitAnimationDuration = spinDuration;
+    image.style.animationDuration = spinDuration;
+    leafDiv.appendChild(image);
+    return leafDiv;
+}
+window.addEventListener('load', init, false);
+    </script>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="loading">
@@ -156,19 +202,6 @@
 
 
 <div class="post">
-    <a href="/2020/bainiangudu/" title="《百年孤独》中的女性形象浅探">
-        <img src="http://cdn.nenu.site/maerkesi.jfif" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>六月 16, 2020</p>
-        <h3><a href="/2020/bainiangudu/" title="《百年孤独》中的女性形象浅探" class="posttitle">《百年孤独》中的女性形象浅探</a></h3>
-        <p>《百年孤独》中的女性形象浅探
-摘要：《百年孤独》描写了布恩迪亚家族七代人的百年发展，引发了人们对拉美地区人情风俗的关注，这片古老神秘的土地上充满着诡谲和驳...</p>
-    </div>
-</div>
-
-
-<div class="post">
     <a href="/2020/waiguowenxue2/" title="外国文学（二）斯丹达尔和《红与黑》">
         <img src="http://cdn.nenu.site/1232123132132131321.png" class="cover" width="680" height="440">
     </a>
@@ -238,6 +271,22 @@
 革命民主主义和现实主义时期的俄国
 一、西方
 首先，从地理地域的角度讲，这个西方指的是与亚洲等东方...</p>
+    </div>
+</div>
+
+
+<div class="post">
+    <a href="/2020/meixue1/" title="美学原理（一）">
+        <img src="http://cdn.nenu.site/meixue.png" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>二月 26, 2020</p>
+        <h3><a href="/2020/meixue1/" title="美学原理（一）" class="posttitle">美学原理（一）</a></h3>
+        <p>第一节 美学的历史一、美学思维及其古代形态
+二、美学学科的形成及其当代演变
+三、中国美学
+四、马克思主义美学
+一、美学思维及其古代形态1.史前期史前考古发...</p>
     </div>
 </div>
 

@@ -30,6 +30,52 @@
     <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
     </script>
+	<script>
+	//树叶飘落
+var NUMBER_OF_LEAVES = 8;
+function init(){
+    var container = document.getElementById('snow');
+    for (var i = 0; i < NUMBER_OF_LEAVES; i++) {
+        container.appendChild(createALeaf());
+    }
+}
+function randomInteger(low, high){
+    return low + Math.floor(Math.random() * (high - low));
+}
+function randomFloat(low, high){
+    return low + Math.random() * (high - low);
+}
+function pixelValue(value){
+    return value + 'px';
+}
+function durationValue(value){
+    return value + 's';
+}
+function createALeaf(){
+    var leafDiv = document.createElement('div');
+    leafDiv.style.top = "-50px";
+    leafDiv.style.left = pixelValue(randomInteger(0, 1920));
+    leafDiv.style.webkitAnimationName = 'fade, drop';
+    leafDiv.style.animationName = 'fade, drop';
+    var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+    leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    leafDiv.style.animationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    var leafDelay = durationValue(randomFloat(0, 5));
+    leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay;
+    leafDiv.style.animationDelay = leafDelay + ', ' + leafDelay;
+    var image = document.createElement('img');
+    image.src = 'https://game.gtimg.cn/images/dnf/cp/a20200813box/snow' + randomInteger(1, 4) + '.png';
+    var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip';
+    image.style.webkitAnimationName = spinAnimationName;
+    image.style.animationName = spinAnimationName;
+    var spinDuration = durationValue(randomFloat(4, 8));
+    image.style.webkitAnimationDuration = spinDuration;
+    image.style.animationDuration = spinDuration;
+    leafDiv.appendChild(image);
+    return leafDiv;
+}
+window.addEventListener('load', init, false);
+    </script>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="loading">
@@ -76,7 +122,7 @@
 <div id="screen">
     <div id="mark">
         <div class="layer" data-depth="0.4">
-            <img src="http://cdn.nenu.site/umb.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
+            <img src="http://cdn.nenu.site/thumb%20%284%29.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
         </div>
     </div>
     <div id="vibrant">
@@ -93,27 +139,16 @@
     </div>
     
     <div id="post0">
-        <p>六月 19, 2018</p>
-        <h2><a href="/2018/umbra/" title="伞" class="posttitle">伞</a></h2>
-        <p class="summary">江南水乡正值梅雨，烟雨朦胧的江面依稀倒映着白与翠绿相织的倩影。那是身着华服的姑娘在雨中撑起一把油纸伞，柳眉凝蹙，在...</p>
+        <p>六月 18, 2018</p>
+        <h2><a href="/2018/travel/" title="旅行" class="posttitle">旅行</a></h2>
+        <p class="summary">很久以前，我开始精心谋划一场旅行。现在我应该让生活的某个节点粗糙起来，于是这等精细的策划被抛弃了。
+还是源于很久前...</p>
     </div>
     
 </div>
 
     <div id="primary">
         
-<div class="post">
-    <a href="/2018/umbra/" title="伞">
-        <img src="http://cdn.nenu.site/umb.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>六月 19, 2018</p>
-        <h3><a href="/2018/umbra/" title="伞" class="posttitle">伞</a></h3>
-        <p>江南水乡正值梅雨，烟雨朦胧的江面依稀倒映着白与翠绿相织的倩影。那是身着华服的姑娘在雨中撑起一把油纸伞，柳眉凝蹙，在踱步中焦灼等待着什么。我对伞的美好寄寓，...</p>
-    </div>
-</div>
-
-
 <div class="post">
     <a href="/2018/travel/" title="旅行">
         <img src="http://cdn.nenu.site/thumb%20%284%29.jpg" class="cover" width="680" height="440">
@@ -135,6 +170,19 @@
         <p>六月 17, 2018</p>
         <h3><a href="/2018/the-hat/" title="他知道你帽子里藏了什么" class="posttitle">他知道你帽子里藏了什么</a></h3>
         <p>初见你戴帽子，那是一顶无任何纹饰的大红鸭舌帽。你娘亲送给你，你却不想收留这个红家伙。她苦口婆心的劝你：“留着吧，不然晒头皮“。你笑了笑，不置可否。你把它置...</p>
+    </div>
+</div>
+
+
+<div class="post">
+    <a href="/2018/bainiangudu/" title="《百年孤独》中的女性形象浅探">
+        <img src="http://cdn.nenu.site/maerkesi.jfif" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>六月 16, 2018</p>
+        <h3><a href="/2018/bainiangudu/" title="《百年孤独》中的女性形象浅探" class="posttitle">《百年孤独》中的女性形象浅探</a></h3>
+        <p>《百年孤独》中的女性形象浅探
+摘要：《百年孤独》描写了布恩迪亚家族七代人的百年发展，引发了人们对拉美地区人情风俗的关注，这片古老神秘的土地上充满着诡谲和驳...</p>
     </div>
 </div>
 

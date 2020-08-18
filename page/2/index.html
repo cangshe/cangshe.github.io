@@ -30,6 +30,52 @@
     <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
     </script>
+	<script>
+	//树叶飘落
+var NUMBER_OF_LEAVES = 8;
+function init(){
+    var container = document.getElementById('snow');
+    for (var i = 0; i < NUMBER_OF_LEAVES; i++) {
+        container.appendChild(createALeaf());
+    }
+}
+function randomInteger(low, high){
+    return low + Math.floor(Math.random() * (high - low));
+}
+function randomFloat(low, high){
+    return low + Math.random() * (high - low);
+}
+function pixelValue(value){
+    return value + 'px';
+}
+function durationValue(value){
+    return value + 's';
+}
+function createALeaf(){
+    var leafDiv = document.createElement('div');
+    leafDiv.style.top = "-50px";
+    leafDiv.style.left = pixelValue(randomInteger(0, 1920));
+    leafDiv.style.webkitAnimationName = 'fade, drop';
+    leafDiv.style.animationName = 'fade, drop';
+    var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+    leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    leafDiv.style.animationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    var leafDelay = durationValue(randomFloat(0, 5));
+    leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay;
+    leafDiv.style.animationDelay = leafDelay + ', ' + leafDelay;
+    var image = document.createElement('img');
+    image.src = 'https://game.gtimg.cn/images/dnf/cp/a20200813box/snow' + randomInteger(1, 4) + '.png';
+    var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip';
+    image.style.webkitAnimationName = spinAnimationName;
+    image.style.animationName = spinAnimationName;
+    var spinDuration = durationValue(randomFloat(4, 8));
+    image.style.webkitAnimationDuration = spinDuration;
+    image.style.animationDuration = spinDuration;
+    leafDiv.appendChild(image);
+    return leafDiv;
+}
+window.addEventListener('load', init, false);
+    </script>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body class="loading">
@@ -76,7 +122,7 @@
 <div id="screen">
     <div id="mark">
         <div class="layer" data-depth="0.4">
-            <img src="http://cdn.nenu.site/meixue.png" id="cover" crossorigin="anonymous" width="1920" height="1080">
+            <img src="http://cdn.nenu.site/XIANSHI.png" id="cover" crossorigin="anonymous" width="1920" height="1080">
         </div>
     </div>
     <div id="vibrant">
@@ -93,35 +139,16 @@
     </div>
     
     <div id="post0">
-        <p>二月 26, 2020</p>
-        <h2><a href="/2020/meixue1/" title="美学原理（一）" class="posttitle">美学原理（一）</a></h2>
-        <p class="summary">第一节 美学的历史一、美学思维及其古代形态
-二、美学学科的形成及其当代演变
-三、中国美学
-四、马克思主义美学
-一、...</p>
+        <p>二月 25, 2020</p>
+        <h2><a href="/2020/waiguowenxue1/" title="外国文学（一）十九世纪现实主义概述" class="posttitle">外国文学（一）十九世纪现实主义概述</a></h2>
+        <p class="summary">期末考试80 课程论文20 19-20世纪，中国以外的作家作品，文学思潮，写一个感兴趣的话题。
+当我们谈起“19世...</p>
     </div>
     
 </div>
 
     <div id="primary">
         
-<div class="post">
-    <a href="/2020/meixue1/" title="美学原理（一）">
-        <img src="http://cdn.nenu.site/meixue.png" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>二月 26, 2020</p>
-        <h3><a href="/2020/meixue1/" title="美学原理（一）" class="posttitle">美学原理（一）</a></h3>
-        <p>第一节 美学的历史一、美学思维及其古代形态
-二、美学学科的形成及其当代演变
-三、中国美学
-四、马克思主义美学
-一、美学思维及其古代形态1.史前期史前考古发...</p>
-    </div>
-</div>
-
-
 <div class="post">
     <a href="/2020/waiguowenxue1/" title="外国文学（一）十九世纪现实主义概述">
         <img src="http://cdn.nenu.site/XIANSHI.png" class="cover" width="680" height="440">
@@ -252,6 +279,18 @@
         <h3><a href="/2019/akanairen/" title="试论《阿卡奈人》" class="posttitle">试论《阿卡奈人》</a></h3>
         <p>摘要
 《阿卡奈人》是古希腊作家阿里斯托芬于公元前425年的一部喜剧，该剧的中心思想是主张和平，反对内战。阿里斯托芬采用夸张泼辣的手法表现生活，抨击社会弊端...</p>
+    </div>
+</div>
+
+
+<div class="post">
+    <a href="/2019/shennvfeng/" title="舒婷《神女峰》赏析">
+        <img src="http://cdn.nenu.site/211.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>九月 29, 2019</p>
+        <h3><a href="/2019/shennvfeng/" title="舒婷《神女峰》赏析" class="posttitle">舒婷《神女峰》赏析</a></h3>
+        <p>这首诗歌是舒婷于上世纪八十年代创作的，“神女峰”含多层寓意，一说为西王母幼女瑶姬的化身，曾助夏禹排除积水，后留驻巫山，保护行船平安；一说源于宋玉的《高唐赋...</p>
     </div>
 </div>
 
